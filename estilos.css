@@ -1,0 +1,136 @@
+*{
+    font-family: 'Lato', sans-serif;
+    /* font-size: 30px; */
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.menu{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    
+    background: white;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#intro,
+#fresh,
+#great {
+    font-size: 20px;
+}
+
+#intro{
+    height: 100vh;
+
+    background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.85) 39%, rgba(255,255,255,0.85) 100%), url(imágenes/coffee.jpg);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#intro h1, #fresh h2, #great h2{
+    color: #333;
+    font-size: 55px;
+    padding: 30vh 0 0 0;
+    margin: 0;
+    font-family: 'Oswald';
+}
+
+#intro p, #fresh p, #great p{
+    color: #666;
+    margin: 50px;
+    font-family: 'Oswald';
+ 
+}
+
+#intro a, #fresh a, #great a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px;
+
+    background: #c09370;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#fresh{
+    display: flex;
+}
+
+#fresh .izquierda{
+    width: 50%;
+    padding: 0 100px;
+    padding: 100px;
+}
+
+.derecha {
+    height: auto;
+    width: 86%;
+
+    background: url(/Imágenes/FRESH.jpg);
+    background-size: cover;
+} 
+
+#fresh h2, #great h2{
+    /* font-size: 40px; */
+    padding: 30px 30px 30px 0;
+}
+
+#fresh p, #great p{
+    /* font-size: 30px; */
+    padding: 0px;
+    margin-left: 0;
+}
+
+#great {
+    height: 100vh;
+    position: relative;
+
+    background: url(/Imágenes/Great.jpg);
+    background-size: cover;
+}
+
+#great .contenido {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+}
+
+#great p {
+  padding-right: 20px;
+}
